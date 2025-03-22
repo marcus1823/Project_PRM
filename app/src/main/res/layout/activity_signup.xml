@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/loginbg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Create Account"
+        android:textColor="#EB1C24"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtFullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full name"
+        android:padding="12dp"
+        android:inputType="text"
+        android:background="@android:drawable/editbox_background"
+        android:textColorHint="#F4A8AB"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:textColorHint="#F4A8AB"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:background="@android:drawable/editbox_background"
+        android:textColorHint="#F4A8AB"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:textColorHint="#F4A8AB"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edtAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:textColorHint="#F4A8AB"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#EB1C24"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Sign in here"
+        android:textColor="#EB1C24"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:padding="8dp"/>
+    
+
+</LinearLayout>

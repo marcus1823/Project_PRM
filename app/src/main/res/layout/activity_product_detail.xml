@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/txtProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        android:paddingTop="12dp" />
+
+    <TextView
+        android:id="@+id/txtProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/txtProductDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:paddingTop="13dp" />
+
+    <TextView
+        android:id="@+id/txtProductStock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/txtSalesQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingTop="4dp"
+        />
+
+    <!-- Layout chứa nút tăng giảm số lượng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnDecrease"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:textSize="20sp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="20sp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:layout_marginEnd="8dp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnIncrease"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:textSize="20sp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+    <!-- Nút thao tác -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="Thêm vào giỏ hàng"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="8dp"/>
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:textSize="20sp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="Quay lại"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

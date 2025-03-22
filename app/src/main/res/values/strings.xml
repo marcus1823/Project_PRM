@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MenAccessoriesShop</string>
+    <string name="default_web_client_id">242200971565-adicplrbf6rou0phl7ccmqnqj6qlvoub.apps.googleusercontent.com</string>
+    242200971565-hrk4j6n2jfmcn5pb10u57dio6trhapvj.apps.googleusercontent.com
+
+    <string name="navigation_drawer_open">Open Navigation</string>
+    <string name="navigation_drawer_close">Close Navigation</string>
+    <string name="back">Back</string>
+
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/profilebg">
+
+    <TextView
+        android:layout_width="346dp"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:text="Hồ sơ"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:text="Tên:"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/tvFullname"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:gravity="center"
+        android:textColor="#EB1C24"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:gravity="center"
+        android:textSize="25dp"/>
+    <EditText
+        android:id="@+id/tvEmail"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:enabled="false"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#EB1C24"/>
+
+    <TextView
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại:"
+        android:gravity="center"
+        android:textSize="25dp"/>
+    <EditText
+        android:id="@+id/tvPhone"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:enabled="false"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#EB1C24"/>
+
+
+    <TextView
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ:"
+        android:gravity="center"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/tvAddress"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#EB1C24"/>
+
+
+
+    <Button
+        android:id="@+id/btnUpdateProfile"
+        android:layout_width="239dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#EB1C24"
+        android:gravity="center"
+        android:text="Cập nhật"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnOrderHistory"
+        android:layout_width="239dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#EB1C24"
+        android:gravity="center"
+        android:text="Lịch sử mua"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="239dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#EB1C24"
+        android:gravity="center"
+        android:text="Đăng xuất"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+</LinearLayout>

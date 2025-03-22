@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trang giao dịch"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"/>
+
+    <ImageView
+        android:id="@+id/imgStatusIcon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/fail"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvAmount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số tiền: 000.000 VND"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imgStatusIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvPaymentStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thanh toán thất bại!"
+        android:textColor="#EF5249"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/tvAmount2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvOrderId2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã đơn hàng: #123456"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/tvPaymentStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvPaymentDate2"
+        android:layout_width="336dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="8dp"
+        android:text="Ngày thanh toán: ..."
+        android:textSize="25sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOrderId2" />
+
+    <Button
+        android:id="@+id/btnHomepage"
+        android:layout_width="250dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="130dp"
+        android:text="Trang chủ"
+        android:textSize="20sp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPaymentDate2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
