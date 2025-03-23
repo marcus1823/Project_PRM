@@ -60,7 +60,8 @@ public class ManageStoreActivity extends AppCompatActivity implements Navigation
         initializeHERESDK();
         setContentView(R.layout.activity_manage_store);
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://67dd31cce00db03c406a9077.mockapi.io/api/")
+//                .baseUrl("https://67dd31cce00db03c406a9077.mockapi.io/api/")
+                .baseUrl("https://67df9223a76352338f9aaee49.mockapi.io/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         storeService = retrofit.create(StoreService.class);

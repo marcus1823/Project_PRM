@@ -69,7 +69,7 @@ public class ManageProductActivity extends AppCompatActivity implements Navigati
         recyclerViewProducts.setLayoutManager(new LinearLayoutManager(this));
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://67dd31cce00db03c406a9077.mockapi.io/api/")
+                .baseUrl("https://67df9223a76352338f9aaee49.mockapi.io/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
