@@ -3,10 +3,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ListView
-        android:id="@+id/listViewCartItems"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCartItems"
         android:layout_width="match_parent"
-        android:layout_height="372dp" />
+        android:layout_height="372dp"/>
     <TextView
         android:id="@+id/user_name"
         android:layout_width="wrap_content"
@@ -29,20 +29,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
-        android:layout_gravity="center"
-    android:layout_marginTop="16dp"
-    android:layout_marginBottom="16dp"/>
-    <Spinner
-        android:id="@+id/spinnerOrderStatus"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp" />
-
-    <Button
-        android:id="@+id/buttonUpdateStatus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Update Status"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"/>

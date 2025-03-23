@@ -50,8 +50,9 @@ dependencies {
     )))
     implementation("com.github.bumptech.glide:glide:4.16.0")
     implementation(libs.legacy.support.v4)
-    implementation(libs.lifecycle.livedata.ktx)
-    implementation(libs.lifecycle.viewmodel.ktx)
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
 
@@ -78,4 +79,3 @@ dependencies {
     implementation("com.sun.mail:android-mail:1.6.7")
     implementation("com.sun.mail:android-activation:1.6.7")
 }
-
