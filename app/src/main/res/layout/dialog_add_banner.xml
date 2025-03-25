@@ -2,7 +2,20 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="16dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#FAF3E0"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý Banner"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#5D4037"
+        android:gravity="center"
+        android:paddingBottom="12dp" />
 
     <EditText
         android:id="@+id/edtBannerName"
@@ -11,7 +24,9 @@
         android:minHeight="48dp"
         android:padding="12dp"
         android:hint="Tên Banner"
-        android:background="?android:attr/editTextBackground" />
+        android:background="#D7CCC8"
+        android:textColor="#5D4037"
+        android:textSize="16sp"/>
 
     <EditText
         android:id="@+id/edtBannerImageUrl"
@@ -20,15 +35,20 @@
         android:minHeight="48dp"
         android:padding="12dp"
         android:hint="URL Ảnh"
-        android:background="?android:attr/editTextBackground"
+        android:layout_marginTop="20dp"
+        android:background="#D7CCC8"
+        android:textColor="#5D4037"
+        android:textSize="16sp"
         android:maxLines="10"
         android:inputType="textMultiLine"
         android:scrollHorizontally="false" />
-
 
     <CheckBox
         android:id="@+id/chkBannerActive"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kích hoạt banner" />
+        android:text="Kích hoạt banner"
+        android:layout_marginTop="10dp"
+        android:textColor="#5D4037"
+        android:textSize="16sp"/>
 </LinearLayout>

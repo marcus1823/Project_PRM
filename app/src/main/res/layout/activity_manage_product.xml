@@ -5,9 +5,9 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    android:background="#FAF3E0">
 
-    <!-- Nội dung chính -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,33 +16,34 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:backgroundTint="#EB1C24"
-            android:background="?attr/colorPrimary"
+            android:layout_height="64dp"
+            android:background="#795548"
             android:elevation="4dp"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:layout_constraintTop_toTopOf="parent"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            android:paddingTop="16dp"/>
+            android:paddingTop="12dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="16dp"
-            android:layout_marginTop="?attr/actionBarSize">
+            android:layout_marginTop="72dp"
+            android:background="#FAF3E0">
 
-            <!-- Ô tìm kiếm -->
             <EditText
                 android:id="@+id/edtSearch"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:hint="Tìm kiếm sản phẩm..."
                 android:padding="10dp"
-                android:background="@android:color/white"
+                android:background="#D7CCC8"
                 android:drawableLeft="@android:drawable/ic_menu_search"
                 android:textSize="16sp"
-                android:layout_margin="8dp"/>
+                android:textColor="#5D4037"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerViewProducts"
@@ -54,27 +55,29 @@
                 android:scrollbars="vertical"
                 android:fadeScrollbars="false"
                 android:paddingBottom="8dp"
-                style="@style/CustomRecyclerView"/>
+                style="@style/CustomRecyclerView"
+                android:background="#FFFFFF"/>
 
-
-            <!-- Nút mở menu Popup -->
             <Button
                 android:id="@+id/btnActions"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#D32F2F"
-                android:textColor="@android:color/white"
+                android:backgroundTint="#5D4037"
+                android:textColor="#FFFFFF"
                 android:text="Chọn thao tác"
-                android:layout_marginTop="16dp"/>
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:padding="12dp"
+                android:fontFamily="sans-serif-medium"/>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Navigation Drawer -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="#6D4C41"
         app:menu="@menu/drawer_menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -9,20 +9,21 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#F5F3EE">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:backgroundTint="#EB1C24"
-            android:background="?attr/colorPrimary"
+            android:background="#5D4037"
             android:elevation="4dp"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:layout_constraintTop_toTopOf="parent"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             android:paddingTop="16dp"
-            android:title="Quản lý cửa hàng"/>
+            android:title="Quản lý cửa hàng"
+            android:titleTextColor="#FFFFFF"/>
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragment_container"
@@ -38,36 +39,33 @@
 
             <ImageView
                 android:id="@+id/imgStore"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_marginTop="60dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="80dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/store"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.548"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/toolbar"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="NotSibling" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
                 android:id="@+id/edtStoreName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Tên cửa hàng"
+                android:background="#FFFFFF"
+                android:padding="12dp"
                 app:layout_constraintTop_toBottomOf="@id/imgStore"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="16dp" />
+                android:layout_marginTop="12dp" />
 
             <EditText
                 android:id="@+id/edtStoreAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Địa chỉ"
+                android:background="#FFFFFF"
+                android:padding="12dp"
                 app:layout_constraintTop_toBottomOf="@id/edtStoreName"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="8dp" />
 
             <EditText
@@ -76,9 +74,9 @@
                 android:layout_height="wrap_content"
                 android:hint="Số điện thoại"
                 android:inputType="number"
+                android:background="#FFFFFF"
+                android:padding="12dp"
                 app:layout_constraintTop_toBottomOf="@id/edtStoreAddress"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="8dp" />
 
             <EditText
@@ -87,43 +85,40 @@
                 android:layout_height="wrap_content"
                 android:hint="Latitude"
                 android:inputType="numberDecimal"
+                android:background="#FFFFFF"
+                android:padding="12dp"
                 android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@id/edtStorePhone"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintTop_toBottomOf="@id/edtStorePhone" />
 
-            <!-- Longitude -->
             <EditText
                 android:id="@+id/edtLongitude"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Longitude"
                 android:inputType="numberDecimal"
+                android:background="#FFFFFF"
+                android:padding="12dp"
                 android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@id/edtLatitude"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintTop_toBottomOf="@id/edtLatitude" />
 
             <Button
                 android:id="@+id/btnUpdateStore"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Cập nhật"
+                android:backgroundTint="#8B4513"
+                android:textColor="#FFFFFF"
                 app:layout_constraintTop_toBottomOf="@id/edtLongitude"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="16dp" />
+
             <com.here.sdk.mapview.MapView
                 android:id="@+id/mapView"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="280dp"
                 app:layout_constraintTop_toBottomOf="@id/btnUpdateStore"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="16dp"/>
+                android:layout_marginTop="12dp"
+                android:background="#D7CCC8" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
@@ -131,5 +126,6 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="#6D4C41"
         app:menu="@menu/drawer_menu" />
 </androidx.drawerlayout.widget.DrawerLayout>
