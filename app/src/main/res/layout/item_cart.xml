@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="8dp"
-    android:background="@android:color/white"
+    android:background="#D2B48C"
     android:layout_margin="4dp"
     android:gravity="center_vertical">
 
@@ -13,7 +13,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:scaleType="centerCrop"
-        android:layout_marginEnd="8dp"/>
+        android:layout_marginEnd="8dp" />
 
     <LinearLayout
         android:layout_width="0dp"
@@ -26,11 +26,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tên sản phẩm"
-            android:textColor="@android:color/holo_red_dark"
+            android:textColor="#8B4513"
             android:textSize="14sp"
             android:textStyle="bold"
             android:ellipsize="end"
-            android:maxLines="1"/>
+            android:maxLines="1" />
 
         <TextView
             android:id="@+id/txtProductPrice"
@@ -38,7 +38,8 @@
             android:layout_height="wrap_content"
             android:text="Giá: 100.000đ"
             android:textSize="14sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="#8B4513" />
 
         <TextView
             android:id="@+id/txtQuantity"
@@ -46,12 +47,13 @@
             android:layout_height="wrap_content"
             android:text="Số lượng: 7"
             android:textSize="14sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="#8B4513" />
     </LinearLayout>
 
     <CheckBox
         android:id="@+id/cbSelectItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:buttonTint="#EB1C24" />
+        android:buttonTint="#8B4513" />
 </LinearLayout>

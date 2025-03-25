@@ -3,24 +3,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    >
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginBottom="10dp"
-        android:background="@color/white"
+        android:layout_marginBottom="12dp"
+        android:background="#FFFFFF"
         android:gravity="center"
         android:text="Men Accessories Shop"
-        android:textColor="#EB1C24"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
+        android:textColor="#795548"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:elevation="2dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="16dp">
+        android:padding="12dp"
+        android:gravity="center_vertical">
 
         <EditText
             android:id="@+id/edtSearch"
@@ -28,9 +31,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Nhập tên sản phẩm..."
-            android:textColor="#EB1C24"
+            android:textColor="#795548"
+            android:textSize="16sp"
+            android:background="#FFFFFF"
             android:padding="10dp"
-            android:textSize="16sp"/>
+            android:elevation="2dp" />
 
         <ImageButton
             android:id="@+id/btnSearch"
@@ -38,35 +43,42 @@
             android:layout_height="50dp"
             android:background="@null"
             android:src="@drawable/search"
-            android:contentDescription="Tìm kiếm"/>
-
+            android:contentDescription="Tìm kiếm"
+            android:elevation="2dp"
+            android:padding="8dp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_marginBottom="12dp">
 
         <Button
             android:id="@+id/btnSortName"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:text="S/x tên"
-            android:backgroundTint="#EB1C24"
             android:textSize="14sp"
             android:textStyle="bold"
-            android:padding="8dp"
-            android:layout_marginEnd="10dp"/>
+            android:background="#795548"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:layout_marginEnd="10dp"
+            android:elevation="2dp" />
 
         <Button
             android:id="@+id/btnSortPrice"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="#EB1C24"
             android:text="S/x giá"
-            android:textStyle="bold"
             android:textSize="14sp"
-            android:padding="8dp"/>
+            android:textStyle="bold"
+            android:background="#795548"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:elevation="2dp" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -74,20 +86,21 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:padding="16dp"
+        android:padding="12dp"
         android:nestedScrollingEnabled="true"
-        android:clipToPadding="false"/>
-
+        android:clipToPadding="false"
+        android:background="#FFFFFF"
+        android:elevation="2dp" />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginBottom="10dp"
-        android:background="@color/white"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
         android:gravity="center"
         android:text="Men Shop"
-        android:textColor="#EB1C24"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
+        android:textColor="#795548"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:elevation="2dp" />
 </LinearLayout>

@@ -4,59 +4,63 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@android:color/white">
+    android:background="#F5F5DC"> <!-- Màu nền trắng ngà -->
 
     <!-- Nhập tên sản phẩm -->
     <EditText
         android:id="@+id/edtProductName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:hint="Nhập tên sản phẩm"
         android:inputType="text"
-        android:padding="10dp"
-        android:background="@android:drawable/edit_text"/>
+        android:padding="12dp"
+        android:textColor="#5D4037"
+        android:textColorHint="#A1887F"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="12dp" />
 
     <!-- Nhập giá sản phẩm -->
     <EditText
         android:id="@+id/edtProductPrice"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:hint="Nhập giá sản phẩm"
         android:inputType="numberDecimal"
-        android:padding="10dp"
+        android:padding="12dp"
+        android:textColor="#5D4037"
+        android:textColorHint="#A1887F"
         android:background="@android:drawable/edit_text"
-        android:layout_marginTop="8dp"/>
-
+        android:layout_marginBottom="12dp" />
 
     <!-- Nhập URL ảnh sản phẩm -->
     <EditText
         android:id="@+id/edtProductImageUrl"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:hint="Nhập URL ảnh sản phẩm"
         android:inputType="textUri"
-        android:padding="10dp"
+        android:padding="12dp"
+        android:textColor="#5D4037"
+        android:textColorHint="#A1887F"
         android:background="@android:drawable/edit_text"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginBottom="16dp" />
 
     <!-- Nút Thêm -->
     <Button
         android:id="@+id/btnAddProduct"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:text="Thêm"
-        android:backgroundTint="#4CAF50"
         android:textColor="@android:color/white"
-        android:layout_marginTop="12dp"/>
+        android:backgroundTint="#8D6E63"
+        android:layout_marginBottom="12dp" />
 
     <!-- Nút Hủy -->
     <Button
         android:id="@+id/btnCancel"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:text="Hủy"
-        android:backgroundTint="#D32F2F"
         android:textColor="@android:color/white"
-        android:layout_marginTop="8dp"/>
-
+        android:backgroundTint="#6D4C41" />
 </LinearLayout>

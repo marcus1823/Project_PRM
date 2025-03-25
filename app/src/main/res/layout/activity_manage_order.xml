@@ -35,14 +35,15 @@
             app:layout_constraintBottom_toBottomOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigation_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:menu="@menu/drawer_menu"
-        android:background="#F5F5DC"
-        app:itemTextColor="#8B4513"
-        app:itemIconTint="#8B4513"
-        app:headerLayout="@layout/nav_header"/>
+<!--    <com.google.android.material.navigation.NavigationView-->
+<!--        android:id="@+id/navigation_view"-->
+<!--        android:layout_width="wr
+ap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="start"-->
+<!--        app:menu="@menu/drawer_menu"-->
+<!--        android:background="#F5F5DC"-->
+<!--        app:itemTextColor="#8B4513"-->
+<!--        app:itemIconTint="#8B4513"-->
+<!--        app:headerLayout="@layout/nav_header"/>-->
 </androidx.drawerlayout.widget.DrawerLayout>

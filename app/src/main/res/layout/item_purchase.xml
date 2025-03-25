@@ -4,26 +4,34 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="8dp"
-    android:background="@android:color/white"
+    android:background="#FAFAD2"
     android:layout_margin="4dp"
-    android:gravity="center_vertical">
+    android:gravity="center_vertical"
+    android:elevation="4dp">
+
+    <!-- Ảnh sản phẩm -->
     <ImageView
         android:id="@+id/imgProduct"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:scaleType="centerCrop"
-        android:layout_marginEnd="8dp"/>
+        android:layout_marginEnd="8dp"
+        android:background="#C0C0C0"
+        android:contentDescription="Product Image" />
+
+    <!-- Thông tin sản phẩm -->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/txtProductName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tên sản phẩm"
-            android:textColor="@android:color/holo_red_dark"
+            android:textColor="#DC143C"
             android:textSize="14sp"
             android:textStyle="bold"
             android:ellipsize="end"
@@ -35,6 +43,7 @@
             android:layout_height="wrap_content"
             android:text="Giá: 0"
             android:textSize="14sp"
+            android:textColor="#228B22"
             android:textStyle="bold"/>
 
         <TextView
@@ -43,13 +52,16 @@
             android:layout_height="wrap_content"
             android:text="Số lượng: 0"
             android:textSize="14sp"
+            android:textColor="#000080"
             android:textStyle="bold"/>
+
         <TextView
             android:id="@+id/txtFinalMoney"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Thành tiền: 0"
             android:textSize="14sp"
+            android:textColor="#8B0000"
             android:textStyle="bold"/>
     </LinearLayout>
 </LinearLayout>

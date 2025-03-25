@@ -2,78 +2,86 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/white"
+    android:layout_height="60dp"
+    android:background="#F5F5DC"
     android:orientation="horizontal"
     android:gravity="center"
     android:padding="8dp">
 
     <!-- Nút Trang chủ -->
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="vertical">
+<LinearLayout
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:gravity="center"
+android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/btnHome"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="?attr/selectableItemBackground"
-            android:contentDescription="Trang chủ"
-            android:src="@drawable/home1"/>
-    </LinearLayout>
+<ImageButton
+    android:id="@+id/btnHome"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:background="?attr/selectableItemBackground"
+    android:contentDescription="Trang chủ"
+    android:scaleType="centerInside"
+    android:padding="4dp"
+    android:src="@drawable/home1" />
+</LinearLayout>
 
     <!-- Nút Danh mục -->
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="vertical">
+<LinearLayout
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:gravity="center"
+android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/btnCategory"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="?attr/selectableItemBackground"
-            android:contentDescription="Danh mục"
-            android:src="@drawable/category"/>
-    </LinearLayout>
+<ImageButton
+    android:id="@+id/btnCategory"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:background="?attr/selectableItemBackground"
+    android:contentDescription="Danh mục"
+    android:scaleType="centerInside"
+    android:padding="4dp"
+    android:src="@drawable/category" />
+</LinearLayout>
 
     <!-- Nút Voucher -->
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="vertical">
+<LinearLayout
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:gravity="center"
+android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/btnCart"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="?attr/selectableItemBackground"
-            android:contentDescription="Giỏ hàng"
-            android:src="@drawable/cart"/>
-    </LinearLayout>
+<ImageButton
+    android:id="@+id/btnCart"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:background="?attr/selectableItemBackground"
+    android:contentDescription="Giỏ hàng"
+    android:scaleType="centerInside"
+    android:padding="4dp"
+    android:src="@drawable/cart" />
+</LinearLayout>
 
     <!-- Nút Tài khoản -->
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="vertical">
+<LinearLayout
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:gravity="center"
+android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/btnAccount"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="?attr/selectableItemBackground"
-            android:contentDescription="Tài khoản"
-            android:src="@drawable/user"/>
-    </LinearLayout>
-
+<ImageButton
+    android:id="@+id/btnAccount"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:background="?attr/selectableItemBackground"
+    android:contentDescription="Tài khoản"
+    android:scaleType="centerInside"
+    android:padding="4dp"
+    android:src="@drawable/user" />
 </LinearLayout>
+
+    </LinearLayout>

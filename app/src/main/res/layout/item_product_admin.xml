@@ -1,10 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="8dp"
-    android:background="@android:color/white"
-    android:layout_margin="4dp">
+    android:background="#F5F5DC"
+    android:layout_margin="4dp"
+    android:elevation="4dp">
 
     <!-- Ảnh sản phẩm (bên trái) -->
     <ImageView
@@ -13,7 +15,8 @@
         android:layout_height="120dp"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
-        android:background="@android:color/darker_gray"/>
+        android:background="#C0C0C0"
+        android:contentDescription="Product Image" />
 
     <!-- Phần chứa thông tin sản phẩm (bên phải) -->
     <LinearLayout
@@ -31,6 +34,7 @@
             android:text="Tên sản phẩm"
             android:textSize="16sp"
             android:textStyle="bold"
+            android:textColor="#8B0000"
             android:ellipsize="end"
             android:maxLines="2"/>
 
@@ -40,7 +44,7 @@
             android:layout_height="wrap_content"
             android:text="100.000đ"
             android:textSize="14sp"
-            android:textColor="@android:color/holo_red_dark"
+            android:textColor="#228B22"
             android:textStyle="bold"
             android:paddingTop="4dp"/>
     </LinearLayout>
