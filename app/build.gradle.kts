@@ -48,6 +48,7 @@ dependencies {
         "include" to listOf("*.aar", "*.jar"),
         "exclude" to listOf("*mock*.jar")
     )))
+    implementation(platform("com.google.firebase:firebase-bom:33.11.0"))
     implementation("com.github.bumptech.glide:glide:4.16.0")
     implementation(libs.legacy.support.v4)
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
@@ -55,7 +56,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
-
+    implementation("com.google.firebase:firebase-analytics")
     annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
