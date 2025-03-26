@@ -6,6 +6,7 @@
     android:padding="30dp"
     android:background="#D2B48C">
 
+    <!-- Tiêu đề Hồ sơ -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,6 +17,7 @@
         android:textStyle="bold"
         android:padding="10dp" />
 
+    <!-- Tên -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,6 +35,7 @@
         android:padding="12dp"
         android:background="@android:drawable/edit_text" />
 
+    <!-- Email -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -51,6 +54,7 @@
         android:enabled="false"
         android:background="@android:drawable/edit_text" />
 
+    <!-- Số điện thoại -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,6 +73,7 @@
         android:enabled="false"
         android:background="@android:drawable/edit_text" />
 
+    <!-- Địa chỉ -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -86,40 +91,37 @@
         android:padding="12dp"
         android:background="@android:drawable/edit_text" />
 
+    <!-- Nút Cập nhật -->
     <Button
         android:id="@+id/btnUpdateProfile"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:backgroundTint="#5C4033"
         android:text="Cập nhật"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:cornerRadius="12dp" />
+        android:gravity="center" />
 
+    <!-- Nút Lịch sử mua -->
     <Button
         android:id="@+id/btnOrderHistory"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:backgroundTint="#5C4033"
         android:text="Lịch sử mua"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:cornerRadius="12dp" />
+        android:gravity="center" />
 
+    <!-- Nút Đăng xuất -->
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:backgroundTint="#5C4033"
         android:text="Đăng xuất"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:cornerRadius="12dp" />
+        android:gravity="center" />
 
 </LinearLayout>
